@@ -1,0 +1,93 @@
+*, *,::before, *::after{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: azure;
+}
+
+root {
+    --size: 50%;
+  }
+
+body{
+    flex-direction:column;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(26, 26, 30);
+}
+
+.final{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 1200px;
+    max-width: 90%;
+    padding: 40px;
+    margin-top: 40px;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: rgb(26, 26, 30);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+
+}
+
+.final{
+    text-align: center;
+}
+
+.text{
+    font-size: 20px;
+    margin: 50px;
+}
+
+.bar{
+    width: 200px;
+    height: 16px;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    box-shadow: inset 5px 5px 10px #2C2C2C, inset -5px -5px 10px #5C5C5C;
+}
+
+.bar-stat{
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-shadow: 0 0 5px #000;
+}
+
+#prog{
+    background: crimson;
+    animation: progSlide 1.5s cubic-bezier(0.33,1,0.68, 1)forwards;
+}
+
+
+
+@keyframes progSlide{
+    0%{width: 0%;
+    }
+    100%{width: var(--footer-size) ;
+    }
+}
+
+.button{
+    background: crimson;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 3px solid rgb(26, 26, 30);
+    border-radius: 500px;
+}
+
+.button:hover{
+    border-color: rgb(116, 1, 1);
+}

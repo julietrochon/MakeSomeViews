@@ -1,0 +1,159 @@
+*, *,::before, *::after{
+    box-sizing: border-box;
+    font-family: "Courier New", Impact, "Arial Black", Arial, Verdana, sans-serif;
+    background: rgb(26, 26, 30);
+    color: white;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    color: azure;
+    padding-bottom: 100px;
+}
+
+.container{
+    display:flex;
+    width: 80%;
+    margin-top: 120px;
+    flex-direction:column;
+    align-items: center;
+    border: 2px solid hsl(0, 0%, 100%);
+    border-radius: 5px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+  }
+
+header h1{
+    
+    padding: 15px;
+    align-items: center;
+    text-align: center;
+    font-size: 50px;
+    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+}
+
+h2{
+    margin: 10px;
+    padding: 10px;
+}
+
+.pictures{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.picturesGender{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.picgender{
+    width: 200px;
+}
+
+#picBoy:hover
+{
+    background-color: rgb(255, 38, 0);
+}
+
+#picGirl:hover
+{
+    background-color: rgb(255, 38, 0);
+}
+
+#picculture{
+    margin: 10px;
+    margin-left: 20px;
+    width: 245px;
+}
+
+#picgaming{
+    margin: 10px;
+    margin-left: 20px;
+    width: 230px;
+}
+
+#piclifestyle{
+    margin: 10px;
+    margin-left: 20px;
+    width: 270px;
+}
+
+
+
+#picgaming:hover{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgba(201, 30, 0, 0.664);
+}
+
+#piclifestyle:hover{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgba(201, 30, 0, 0.664);
+}
+
+#picculture:hover{
+    margin-left: 20px;
+    border-radius: 5px;
+    background-color: rgba(201, 30, 0, 0.664);
+}
+
+.clavier{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 25px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.lineTwo{
+    margin-left: 10px;
+}
+
+.lineThree{
+    margin-left: 20px;
+}
+
+
+.keyboard{
+    float: left;
+    width:50px;
+    height: 50px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(26, 26, 30);
+    padding: 5px 10px;
+    outline: none;
+}
+
+#btn_name{
+    width:250px;
+    margin-left: 120px;
+}
+
+#name{
+    font-size: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
