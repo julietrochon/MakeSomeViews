@@ -17,5 +17,26 @@ body{
 }
 
 .button{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 50px;
+}
 
+.pic{
+    margin: 50px;
+    width: 250px;
+    border-color: yellow;
+    padding: 5px;
+}
+
+#pic1:hover{
+    background-color: rgb(165, 0, 0);
+    border-radius: 20px;
+}
+
+#pic2:hover{
+    background-color: rgb(165, 0, 0);
+    border-radius: 20px;
 }

@@ -41,16 +41,10 @@ header h1{
 }
 
 h2{
-    margin: 10px;
-    padding: 10px;
+    margin-bottom: 40px;
+    margin-top: -50px;
 }
 
-.pictures{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
 
 .picturesGender{
     width: 80%;
@@ -60,54 +54,44 @@ h2{
 }
 
 .picgender{
-    width: 200px;
+    padding: 20px;
+    height: 300px;
 }
 
 #picBoy:hover
 {
-    background-color: rgb(175, 0, 0);
+    padding: 0px;
 }
 
 #picGirl:hover
 {
-    background-color: rgb(175, 0, 0);
+    padding: 0px;
 }
 
-#picculture{
-    margin: 10px;
-    margin-left: 20px;
-    width: 245px;
+.pictures{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-#picgaming{
-    margin: 10px;
-    margin-left: 20px;
-    width: 230px;
+.pictheme{
+    height: 400px;
+    padding: 10px;
 }
-
-#piclifestyle{
-    margin: 10px;
-    margin-left: 20px;
-    width: 270px;
-}
-
-
 
 #picgaming:hover{
-    margin-left: 20px;
-    border-radius: 5px;
+    padding: 0px;
     background-color: rgb(175, 0, 0);
 }
 
 #piclifestyle:hover{
-    margin-left: 20px;
-    border-radius: 5px;
+    padding: 0px;
     background-color: rgb(175, 0, 0);
 }
 
 #picculture:hover{
-    margin-left: 20px;
-    border-radius: 5px;
+    padding: 0px;
     background-color: rgb(175, 0, 0);
 }
 
