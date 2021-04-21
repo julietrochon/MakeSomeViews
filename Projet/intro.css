@@ -23,10 +23,7 @@ body{
     margin-top: 120px;
     flex-direction:column;
     align-items: center;
-    border: 2px solid hsl(0, 0%, 100%);
-    border-radius: 5px;
     padding: 25px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 
 header {
@@ -68,12 +65,12 @@ h2{
 
 #picBoy:hover
 {
-    background-color: rgb(255, 38, 0);
+    background-color: rgb(175, 0, 0);
 }
 
 #picGirl:hover
 {
-    background-color: rgb(255, 38, 0);
+    background-color: rgb(175, 0, 0);
 }
 
 #picculture{
@@ -99,19 +96,19 @@ h2{
 #picgaming:hover{
     margin-left: 20px;
     border-radius: 5px;
-    background-color: rgba(201, 30, 0, 0.664);
+    background-color: rgb(175, 0, 0);
 }
 
 #piclifestyle:hover{
     margin-left: 20px;
     border-radius: 5px;
-    background-color: rgba(201, 30, 0, 0.664);
+    background-color: rgb(175, 0, 0);
 }
 
 #picculture:hover{
     margin-left: 20px;
     border-radius: 5px;
-    background-color: rgba(201, 30, 0, 0.664);
+    background-color: rgb(175, 0, 0);
 }
 
 .clavier{

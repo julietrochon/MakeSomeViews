@@ -65,7 +65,7 @@ h1{
 }
 
 #prog{
-    background: crimson;
+    background: rgb(255, 0, 0);
     animation: progSlide 1.5s cubic-bezier(0.33,1,0.68, 1)forwards;
 }
 
@@ -79,7 +79,7 @@ h1{
 }
 
 .button{
-    background: crimson;
+    background: rgb(255, 0, 0);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -89,5 +89,6 @@ h1{
 }
 
 .button:hover{
-    border-color: rgb(116, 1, 1);
+    background-color: rgb(170, 0, 0);
+    border-color: rgb(165, 0, 0);
 }

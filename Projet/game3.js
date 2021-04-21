@@ -1,3 +1,5 @@
+const text0 = document.getElementById('text0');
+
 const text1 = document.getElementById('text1');
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
@@ -13,7 +15,6 @@ let btnget = document.querySelector('#btn-get');
 let inputGet = document.querySelector('#input-get');
 
 const text4 = document.getElementById('text4');
-const text5 = document.getElementById('text5');
 
 const SeeResult = document.getElementById('SeeResult');
 
@@ -22,14 +23,12 @@ var point = 0;
 var FinalValue = 0;
 
 
-function startGame()
-{
-    point =  Math.floor(data); 
-    
+function startGame() {
+    point = Math.floor(data);
+
     text2.style.display = "none";
     text3.style.display = "none";
     text4.style.display = "none";
-    text5.style.display = "none";
 
     currentValue.style.display = "none";
     sliderC.style.display = "none";
@@ -39,7 +38,8 @@ function startGame()
     inputGet.style.display = "none";
     SeeResult.style.display = "none";
 
-    text1.innerText = "alors l'histoire commence au pérou et je suis très contente";
+    text0.innerText = "You are starting your third year as a YouTuber. This year is based on the theme of product placement. Indeed, you manage to release a salary for you but you need additional money to pay your employees.";
+    text1.innerText = "On Youtube, product placement is still a bit taboo, do you think it's good to say it or pretend nothing has happened?";
 
     btn1.addEventListener("click", option1G);
     btn2.addEventListener("click", option1D);
@@ -52,7 +52,7 @@ function option1G() {
     btn2.disabled = "disabled";
 
     text2.style.display = "table-cell";
-    text2.innerText = point + " LEFT welcome to the second game   ---- Lorem ipsum dolor sit amet. Non dolore quo ducimus necessitatibus quo voluptatem ipsam rem harum omnis eos quidem odio. Et commodi possimus et quibusdam natus sit maiores dolor et ratione libero? Ut facilis dignissimos et aperiam ipsam aut rerum aliquid et assumenda tempore aut dolorum neque quo architecto natus sit dolor atque. Ad molestiae illo rem unde eaque qui reprehenderit consequuntur qui voluptates natus At perspiciatis deserunt et consequuntur accusamus maxime!";
+    text2.innerText = "being a youtuber is not that easy. You know why? As a self-employed person, it's up to you to take care of the administrative papers. In your opinion, to within 10 percent, how much is taxed for a self-employed person?";
     currentValue.style.display = "table-cell";
     sliderC.style.display = "table-cell";
     range.style.display = "table-cell";
@@ -63,33 +63,36 @@ function option1D() {
     btn2.disabled = "disabled";
 
     text2.style.display = "table-cell";
-    text2.innerText = " RIGHT welcome to the second game   ---- Lorem ipsum dolor sit amet. Non dolore quo ducimus necessitatibus quo voluptatem ipsam rem harum omnis eos quidem odio. Et commodi possimus et quibusdam natus sit maiores dolor et ratione libero? Ut facilis dignissimos et aperiam ipsam aut rerum aliquid et assumenda tempore aut dolorum neque quo architecto natus sit dolor atque. Ad molestiae illo rem unde eaque qui reprehenderit consequuntur qui voluptates natus At perspiciatis deserunt et consequuntur accusamus maxime!";
+    text2.innerText = "being a youtuber is not that easy. You know why? As a self-employed person, it's up to you to take care of the administrative papers. In your opinion, to within 10 percent, how much is taxed for a self-employed person?";
     currentValue.style.display = "table-cell";
     sliderC.style.display = "table-cell";
     range.style.display = "table-cell";
-    
+
 }
 
-sliderC.addEventListener("input", function(event){
+sliderC.addEventListener("input", function (event) {
     let value = event.target.value;
     currentValue.innerText = value;
     currentValue.classList.add("active");
     currentValue.style.left = `${value}%`;
     btnok.style.display = "table-cell";
     FinalValue = value;
-   });
-   
-   sliderC.addEventListener("blur", function(event){
+});
+
+sliderC.addEventListener("blur", function (event) {
     btnok.style.display = "table-cell";
-       currentValue.classList.remove("active");
-   });
+    currentValue.classList.remove("active");
+});
 
 btnok.addEventListener('click', () => {
 
     btnok.disabled = "disabled";
 
+    if (FinalValue >= 55 || FinalValue <= 65) {
+        point += 2;
+    }
     text3.style.display = "table-cell";
-    text3.innerText = "enfin" + FinalValue;
+    text3.innerText = "One last question crosses your mind. Should we make product placements of anything and everything even if it is very well paid. You don't think that's a really good idea. Which category of product placements do you think should be avoided?";
     btnget.style.display = "table-cell";
     inputGet.style.display = "table-cell";
 
@@ -97,23 +100,14 @@ btnok.addEventListener('click', () => {
 
 btnget.addEventListener('click', () => {
     let response = inputGet.value;
-    
-    if (response === "love") {
-        point+=1;
-        
-        text4.innerText = "la c'est good " + response ;
-        text5.style.display = "table-cell";
-        text5.innerText = "you have " + point;
-        SeeResult.style.display = "table-cell";
+    text4.style.display = "table-cell";
+
+    if (response === "mobile game") {
+        point += 1;
     }
-    else{
-        text4.style.display = "table-cell";
-        text4.innerText = "la c'est pas good " + response;
-        text5.style.display = "table-cell";
-        text5.innerText = "you have " + point;
-    
-        SeeResult.style.display = "table-cell";
-    }
+
+    text4.innerText = "Product placements went pretty well. Hope the 4th year goes as well";
+    SeeResult.style.display = "table-cell";
 })
 
 SeeResult.onclick = () => {

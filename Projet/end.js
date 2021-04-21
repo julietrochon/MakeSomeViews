@@ -9,7 +9,7 @@ data = sessionStorage.getItem('point');
 function DrawResult() {
 
     var point = parseInt(data);
-    finalR = (point * 100) / 6;
+    finalR = (point * 100) / 25;
     finalR = Math.round(finalR);
 
     let nbre = finalR + "%";

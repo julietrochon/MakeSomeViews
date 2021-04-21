@@ -1,3 +1,5 @@
+const text0 = document.getElementById('text0');
+
 const text1 = document.getElementById('text1');
 const btn1 = document.getElementById('btn1');
 const btn2 = document.getElementById('btn2');
@@ -18,7 +20,6 @@ const btn7 = document.getElementById('btn7');
 const btn8 = document.getElementById('btn8');
 
 const text4 = document.getElementById('text4');
-const text5 = document.getElementById('text5');
 
 const SeeResult = document.getElementById('SeeResult');
 
@@ -29,12 +30,11 @@ var point = 0;
 
 function startGame() {
 
-    point =  Math.floor(data); 
+    point = Math.floor(data);
 
     text2.style.display = "none";
     text3.style.display = "none";
     text4.style.display = "none";
-    text5.style.display = "none";
 
     btn5.style.display = "none";
     btn6.style.display = "none";
@@ -51,8 +51,9 @@ function startGame() {
 
     SeeResult.style.display = "none";
 
-    text1.innerText = "ANNEE 2";
+    text0.innerText = "welcome for your second year on youtube. This year is placed under the sign of hiring. Indeed, your youtube channel is growing and you can no longer take care of your channel alone. You will therefore have to make choices and hire the right people.";
 
+    text1.innerHTML = "Your first choice is yours. Should I hire my staff on my own or join a network so that they can find my staff?";
     btn1.style.display = "table-cell";
     btn2.style.display = "table-cell";
 
@@ -62,12 +63,12 @@ function startGame() {
 }
 
 function choiceoneL() {
-    point += 1;
+
     btn1.disabled = "disabled";
     btn2.disabled = "disabled";
 
     text2.style.display = "table-cell";
-    text2.innerText = point + " LEFT welcome to the second game   ---- Lorem ipsum dolor sit amet. Non dolore quo ducimus necessitatibus quo voluptatem ipsam rem harum omnis eos quidem odio. Et commodi possimus et quibusdam natus sit maiores dolor et ratione libero? Ut facilis dignissimos et aperiam ipsam aut rerum aliquid et assumenda tempore aut dolorum neque quo architecto natus sit dolor atque. Ad molestiae illo rem unde eaque qui reprehenderit consequuntur qui voluptates natus At perspiciatis deserunt et consequuntur accusamus maxime!";
+    text2.innerText = "well, by hiring staff you will free yourself up time to shoot more videos and gain as many subscribers as possible. The question that arises is in what order to hire this staff.";
 
     choiceOne.style.display = "table-cell";
     choiceTwo.style.display = "table-cell";
@@ -80,11 +81,12 @@ function choiceoneL() {
 }
 
 function choiceoneR() {
+    point += 1;
     btn1.disabled = "disabled";
     btn2.disabled = "disabled";
 
     text2.style.display = "table-cell";
-    text2.innerText = " RIGHT welcome to the second game   ---- Lorem ipsum dolor sit amet. Non dolore quo ducimus necessitatibus quo voluptatem ipsam rem harum omnis eos quidem odio. Et commodi possimus et quibusdam natus sit maiores dolor et ratione libero? Ut facilis dignissimos et aperiam ipsam aut rerum aliquid et assumenda tempore aut dolorum neque quo architecto natus sit dolor atque. Ad molestiae illo rem unde eaque qui reprehenderit consequuntur qui voluptates natus At perspiciatis deserunt et consequuntur accusamus maxime!";
+    text2.innerText = "well, by hiring staff you will free yourself up time to shoot more videos and gain as many subscribers as possible. The question that arises is in what order to hire this staff.";
 
     choiceOne.style.display = "table-cell";
     choiceTwo.style.display = "table-cell";
@@ -102,23 +104,20 @@ btnok.addEventListener('click', () => {
     let ve = input_VE.value; //1
     let prod = input_Prod.value; //2
 
-    
 
-    if( cm === "3"  )
-    {
-        point +=1;
+
+    if (cm === "3") {
+        point += 1;
     }
-    if( ve === "1")
-    {
-        point +=1;
+    if (ve === "1") {
+        point += 1;
     }
-    if( prod === "2")
-    {
-        point +=1;
+    if (prod === "2") {
+        point += 1;
     }
 
     text3.style.display = "table-cell";
-    text3.innerText = "enfin" + point;
+    text3.innerText = "you want to hire staff, good idea. But it doesn't just happen. They are employers and you have to pay them, how do you go about it?";
 
     btn5.style.display = "table-cell";
     btn6.style.display = "table-cell";
@@ -133,15 +132,12 @@ btnok.addEventListener('click', () => {
 })
 
 function option21() {
-    point += 1;
+
     btn5.disabled = "disabled";
     btn6.disabled = "disabled";
 
     text4.style.display = "table-cell";
-    text4.innerText = "PAS CONTENT --- ";
-
-    text5.style.display = "table-cell";
-    text5.innerText = "you have " + point;
+    text4.innerText = "you arrive at the end of the second year, the number of subscribers increases little by little, you are confident for the future.";
 
     SeeResult.style.display = "table-cell";
 }
@@ -153,10 +149,7 @@ function option22() {
     btn8.disabled = "disabled";
 
     text4.style.display = "table-cell";
-    text4.innerText = "PAS CONTENTE --- ";
-
-    text5.style.display = "table-cell";
-    text5.innerText = "you have " + point;
+    text4.innerText = "you arrive at the end of the second year, the number of subscribers increases little by little, you are confident for the future.";
 
     SeeResult.style.display = "table-cell";
 }
@@ -168,25 +161,20 @@ function option23() {
     btn8.disabled = "disabled";
 
     text4.style.display = "table-cell";
-    text4.innerText = "PAS CONTENTE --- ";
-
-    text5.style.display = "table-cell";
-    text5.innerText = "you have " + point;
+    text4.innerText = "you arrive at the end of the second year, the number of subscribers increases little by little, you are confident for the future.";
 
     SeeResult.style.display = "table-cell";
 }
 
 function option24() {
+    point += 1;
     btn5.disabled = "disabled";
     btn6.disabled = "disabled";
     btn7.disabled = "disabled";
     btn8.disabled = "disabled";
 
     text4.style.display = "table-cell";
-    text4.innerText = "PAS CONTENTE --- ";
-
-    text5.style.display = "table-cell";
-    text5.innerText = "you have " + point;
+    text4.innerText = "you arrive at the end of the second year, the number of subscribers increases little by little, you are confident for the future.";
 
     SeeResult.style.display = "table-cell";
 }
