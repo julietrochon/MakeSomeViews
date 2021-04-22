@@ -228,8 +228,16 @@ function option34(){
 }
 
 SeeResult.onclick = () => {
-    sessionStorage.setItem("point", point);
-    location.href = "end.html";
+    if (point < 14) {
+        sessionStorage.setItem("point", point);
+        sessionStorage.setItem("end", "gameFour");
+        location.href = "end.html";
+    }
+    else {
+        sessionStorage.setItem("point", point);
+        sessionStorage.setItem("end", "endGame");
+        location.href = "end.html";
+    }
 }
 
 

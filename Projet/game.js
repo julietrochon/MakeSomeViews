@@ -149,8 +149,17 @@ btnget.addEventListener('click', () => {
 
 
 SeeResult.onclick = () => {
-    sessionStorage.setItem("point", point);
-    location.href = "index2.html";
+
+    if (point <= 1){
+        sessionStorage.setItem("point", point);
+        sessionStorage.setItem("end", "gameOne");
+        location.href = "end.html";
+    }
+    else{
+        sessionStorage.setItem("point", point);
+        location.href = "index2.html";
+    }
+
 }
 
 

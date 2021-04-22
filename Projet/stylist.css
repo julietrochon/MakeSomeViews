@@ -58,6 +58,10 @@ h2{
     margin-bottom: 20px;
 }
 
+#btn1{
+    text-decoration: none;
+}
+
 .btn{
     background-color: rgb(255, 0, 0);
     border: 3px solid hsl(0, 100%, 50%);

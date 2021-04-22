@@ -212,8 +212,15 @@ btnok.onclick = () => {
 }
 
 SeeResult.onclick = () => {
-    sessionStorage.setItem("point", point);
-    location.href = "index5.html";
+    if (point < 12) {
+        sessionStorage.setItem("point", point);
+        sessionStorage.setItem("end", "gameFour");
+        location.href = "end.html";
+    }
+    else {
+        sessionStorage.setItem("point", point);
+        location.href = "index5.html";
+    }
 }
 
 
