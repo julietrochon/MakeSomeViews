@@ -20,7 +20,7 @@ body{
 .container{
     display:flex;
     width: 80%;
-    margin-top: 120px;
+    margin-top: 170px;
     flex-direction:column;
     align-items: center;
     padding: 25px;
@@ -28,16 +28,17 @@ body{
 
 header {
     position: fixed;
+    height: 150px;
     width: 100%;
   }
 
 header h1{
-    
-    padding: 15px;
+    padding: 30px;
     align-items: center;
     text-align: center;
     font-size: 50px;
     font-family: Impact, "Arial Black", Arial, Verdana, sans-serif;
+    background-color: rgb(26,26,30);
 }
 
 h2{
@@ -54,8 +55,9 @@ h2{
 }
 
 .picgender{
+    margin: 20px 100px;
     padding: 20px;
-    height: 300px;
+    height: 350px;
 }
 
 #picBoy:hover

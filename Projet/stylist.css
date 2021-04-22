@@ -29,12 +29,12 @@ body{
 
 header {
     position: fixed;
+    height: 150px;
     width: 100%;
   }
 
 header h1{
-    
-    padding: 15px;
+    padding: 30px;
     align-items: center;
     text-align: center;
     font-size: 50px;
